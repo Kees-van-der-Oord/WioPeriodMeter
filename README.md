@@ -1,5 +1,5 @@
 # Wio Period Meter
-The Wio Period Meter shows the period of CMOS/TTL pulses. The console is a [Seeed Wio Terminal](https://wiki.seeedstudio.com/Wio_Terminal_Intro/) programmed with the [Arduino](https://www.arduino.cc/en/software) sketch WioPeriodMeter.ino.
+The Wio Period Meter shows the period of CMOS/TTL pulses. The console is a [Seeed Wio Terminal](https://wiki.seeedstudio.com/Wio_Terminal_Intro/) programmed with the [Arduino](https://www.arduino.cc/en/software) sketch [WioPeriodMeter.ino](WioPeriodMeter/WioPeriodMeter.ino).
 
 ![WiePeriodMeter](https://github.com/user-attachments/assets/55607441-9674-44df-a68b-a0ad4a5af4ed)
 
