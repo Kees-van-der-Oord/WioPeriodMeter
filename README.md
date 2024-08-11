@@ -6,3 +6,5 @@ The Wio Period Meter shows the period of CMOS/TTL pulses. The console is a [Seee
 The terminal gets power through the USB-C connector. The BNC cable is connected to red line of the right Groove socket (D1, pin 15).
 
 When pulses are detected (falling edge), the fan on the bottom starts rotating and the period between the pulses is shown on the screen.
+
+The USB-C link virtual COM port allows reading the period from software (sending any character will return the last recorded period in microseconds). This requires [the driver](https://github.com/Seeed-Studio/Signed_USB_Serial_Driver) to be installed first.
