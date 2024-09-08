@@ -14,6 +14,5 @@ Version 2 introduces three modes:
 - Low Pulse Width
 - High Pulse Width
 
-Press the top left button to toggle throug the modes.
-
+Press the top left button to toggle through the modes 
 (keep the button pressed for > 0.5 s).
