@@ -152,7 +152,6 @@ void eeprom_init()
   if(signature != WioPeriodMeterSignature)
   {
     EEPROM.write(0, WioPeriodMeterSignature);
-    mode = MODE_LOW;
     EEPROM.write(1, mode);
     EEPROM.commit();
   }
@@ -225,11 +224,12 @@ void loop() {
   if(elapsed > 200)
   {
     last_update = millis();
+
     // format the period
     char buf[64];
     float p = period;
-    // the sprintf function does not round float numbers !
-         if(p < 1000)       { p = uint32_t(p         +0.5)/1000.; printf(buf,"%.3f ms ",p); }
+    // ! the sprintf function does not round float numbers nor pad with spaces !
+         if(p < 1000)       { p = uint32_t(p         +0.5)/1000.; sprintf(buf,"%.3f ms ",p); }
     else if(p < 10000)      { p = uint32_t(p/     10.+0.5)/100.;  sprintf(buf,"%.2f ms ",p);}
     else if(p < 100000)     { p = uint32_t(p/    100.+0.5)/10.;   sprintf(buf,"%.1f ms ",p);}
     else if(p < 1000000)    { p = uint32_t(p/   1000.+0.5)/1.;    sprintf(buf,"%.0f ms ",p);}
