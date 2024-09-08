@@ -13,5 +13,7 @@ Version 2 introduces three modes:
 - Pulse Period
 - Low Pulse Width
 - High Pulse Width
+
 Press the top left button to toggle throug the modes.
+
 (keep the button pressed for > 0.5 s).
