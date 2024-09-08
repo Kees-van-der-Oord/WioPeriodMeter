@@ -8,3 +8,10 @@ The terminal gets power through the USB-C connector. The BNC cable is connected 
 When pulses are detected (falling edge), the fan on the bottom starts rotating and the period between the pulses is shown on the screen.
 
 The USB-C link virtual COM port (baud-rate 115200 bps) allows reading the period from software (sending any character will return the last recorded period in microseconds). This requires [the driver](https://github.com/Seeed-Studio/Signed_USB_Serial_Driver) to be installed first.
+
+Version 2 introduces three modes:
+- Pulse Period
+- Low Pulse Width
+- High Pulse Width
+Press the top left button to toggle throug the modes.
+(keep the button pressed for > 0.5 s).
